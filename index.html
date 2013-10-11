@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+	
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.hello-world.js"></script>
+	<script src="js/jquery.colorfulInput.js"></script>
+
+</head>
+
+<script>
+	$(document).ready( function() {
+		$('h1').helloWorld({
+			text 	: 'another one',
+			color	: 'green',
+			fontStyle : 'bold',
+			complete  : function (){ alert('Done')}
+		
+		});
+		
+		$('select').colorfulInput({
+			backgroundColor: '#ff0000',
+			//textColor : '',
+			textColor: 'blackWhite',
+			//dropdownArrow:
+			fontSize  : '24px'
+		});
+		
+
+	});
+	
+	
+		//-webkit-filter: hue-rotate(50deg); 
+</script>
+
+<style>
+.styled-select {
+   width: 240px;
+   height: 60px;
+   overflow: hidden;
+   background: url(img/kdevelop_down.png) no-repeat right #ddd;
+  
+   }
+   
+.styled-select select {
+   background: transparent;
+   width: 240px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+      height: 60px;
+   padding:10px;
+   }
+
+</style>
+
+<body>
+
+	<h1 id ="first">Testing 1</h1>
+	<p>paragraph 1</p>
+	
+	<h2 style="color:orange; -webkit-filter: invert(100%); ">Testing 2</h2>
+	<p >paragraph 2</p>
+	
+	<h1>Testing 3</h1>
+	<font id="test3" style="color:orange;  background-color:#0000FF; ">Testing 3</font>
+	<p>paragraph 3</p>
+	
+<div class="styled-select">	
+	<select style="width:240px;">
+		<option >10</option>
+		<option>20</option>
+		<option>30</option>
+		<option>41</option>
+		<option>51</option>
+		<option>61</option>
+		<option>71</option>
+		<option>81</option>
+		<option>91</option>
+	</select>
+</div>
+	
+
+
+</body>
+</html>
