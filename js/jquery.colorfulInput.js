@@ -5,7 +5,8 @@
 		var settings = $.extend({
 			backgroundColor : null,
 			textColor		: null,
-			fontSize		: null
+			fontSize		: null,
+			width 			: null
 			
 		} , options);
 		var count = (this[0].length);
@@ -19,6 +20,9 @@
 			
 			if(settings.fontSize)
 				$(this).css("font-size", settings.fontSize);
+				
+			if(settings.width)
+				$(this).css("width", settings.width);
 		
 			for(var i=0; i<count; i++)
 			{
